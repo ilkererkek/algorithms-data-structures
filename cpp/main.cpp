@@ -3,13 +3,13 @@
 
 int main() {
     StaticArray<int> arr(5);
-    arr.insert(0, 10);
-    arr.insert(1, 20);
-    arr.insert(2, 30);
-    arr.print();
+    arr.Insert(0, 10);
+    arr.Insert(1, 20);
+    arr.Insert(2, 30);
+    arr.Print();
 
-    arr.remove(1);
-    arr.print();
+    arr.Remove(1);
+    arr.Print();
 
     return 0;
 }

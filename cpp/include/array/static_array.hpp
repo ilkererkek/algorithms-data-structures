@@ -9,7 +9,7 @@ class StaticArray {
   private:
     T* m_array;
     size_t m_length;
-  bool isValidIndex(size_t index) {
+  bool is_valid_index(size_t index) {
     return index >= 0 && index < m_length;
   }
   public:
@@ -24,19 +24,19 @@ class StaticArray {
     }
 
     T& operator[](size_t index) {\
-      if (!isValidIndex(index)) {
+      if (!is_valid_index(index)) {
           throw std::out_of_range("Index out of range");
       }
       return m_array[index];
     }
 
-    void insert(size_t index, T value) {
-        if(isValidIndex(index)) {
+    void Insert(size_t index, T value) {
+        if(is_valid_index(index)) {
             m_array[index] = value;
         }
     }
 
-    void remove (size_t index) {
+    void Remove(size_t index) {
         if (index >= m_length) {
             return;
         }
@@ -44,13 +44,11 @@ class StaticArray {
         m_array[index] = T();
     }
 
-    void print() {
+    void Print() {
         for (size_t i = 0; i < m_length; i++) {
             std::cout << m_array[i] << " ";
         }
         std::cout << std::endl;
     }
 };
-
-
 #endif
