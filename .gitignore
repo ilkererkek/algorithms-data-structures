@@ -1,0 +1,46 @@
+# Ignore compiled files and object files
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Ignore build directory
+/build/
+*.dSYM/
+
+# Ignore Makefile artifacts
+Makefile~
+*.log
+
+# Ignore C++ executable files
+main
+run_tests
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+pip-log.txt
+
+# Ignore test results
+tests/*.log
+tests/__pycache__/
+
+# Ignore IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Ignore macOS & Linux system files
+.DS_Store
+Thumbs.db
+*.tmp

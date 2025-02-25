@@ -1,5 +1,9 @@
-#include <cstddef>
+// StaticArray.hpp
 #include <iostream>
+#include <stdexcept>
+#include <cstddef>
+#ifndef STATIC_ARRAY_HPP
+#define STATIC_ARRAY_HPP
 template <typename T>
 class StaticArray {
   private:
@@ -48,19 +52,5 @@ class StaticArray {
     }
 };
 
-int main() {
-  StaticArray<int> arr(5);
 
-  arr.insert(0, 10);
-  arr.insert(1, 20);
-  arr.insert(2, 30);
-  arr.insert(3, 40);
-  arr.insert(4, 50);
-
-  arr.print();
-
-  arr.remove(2);
-  arr.print();
-
-  return 0;
-}
+#endif
